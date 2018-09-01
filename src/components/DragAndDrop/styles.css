@@ -1,0 +1,49 @@
+.form {
+	background-color: #f3fbff;
+  width: 65%;
+  height: 300px;
+	box-sizing: border-box;
+	margin: 100px auto 0;
+	border: 2px dashed rgba(0, 159, 226, 0.8);
+}
+
+.input {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.label {
+	width: 100%;
+	height: 100%;
+	color: #676767;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dragging {
+	background-color: rgba(2, 156, 227, 0.2);
+}
+
+.wrapper-result {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	line-height: 1.5;
+}
+
+.result {
+	color: #676767;
+}
+
+.error {
+	color: #c15151;
+}
