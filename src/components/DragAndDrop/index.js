@@ -35,7 +35,7 @@ class DragAndDrop extends Component {
 		}
 	}
 
-	isJsonValide(json) {
+	isJsonValid(json) {
 		try {
 			return JSON.parse(json);
 		}
@@ -71,7 +71,7 @@ class DragAndDrop extends Component {
   }
 
 	processJson(data, name) {
-	  if (this.isJsonValide(data)) {
+	  if (this.isJsonValid(data)) {
 	    const countObjects = this.countObjects(data);
 		  this.setState({result: [...this.state.result, `Number of objects in ${name}: ${countObjects}`]});
     } else {
